@@ -1,9 +1,9 @@
-package de.inncart.components
+package de.innfactory.components
 
 import sri.core.ElementFactory._
 import sri.core.{ReactComponent, ReactElement}
 import sri.mobile.ReactNative
-import de.inncart.router.AppRouter.Second
+import de.innfactory.router.AppRouter.Second
 import sri.universal.components._
 import sri.universal.router.UniversalRouterComponent
 import sri.universal.styles.UniversalStyleSheet

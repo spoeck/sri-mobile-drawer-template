@@ -1,4 +1,4 @@
-package de.inncart.components
+package de.innfactory.components
 
 /**
   * Created by spoeck on 1/5/17.

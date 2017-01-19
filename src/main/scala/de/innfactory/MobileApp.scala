@@ -1,6 +1,6 @@
-package de.inncart
+package de.innfactory
 
-import de.inncart.router.AppRouter
+import de.innfactory.router.AppRouter
 import sri.mobile.ReactNative
 import sri.mobile.all._
 

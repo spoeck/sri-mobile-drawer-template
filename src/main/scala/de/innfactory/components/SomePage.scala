@@ -1,4 +1,4 @@
-package de.inncart.components
+package de.innfactory.components
 
 import sri.core.ElementFactory.makeElement
 import sri.core.ReactComponent

@@ -1,4 +1,4 @@
-package de.inncart.components.wrapper
+package de.innfactory.components.wrapper
 
 import sri.core.{React, ReactClass, ReactElement, ReactNode}
 

@@ -1,7 +1,7 @@
-package de.inncart.components
+package de.innfactory.components
 
-import de.inncart.components.NavDrawer.styles.{backgroundColor, flexOne, style}
-import de.inncart.components.RightButton.styles.{color, marginRight, style}
+import de.innfactory.components.NavDrawer.styles.{backgroundColor, flexOne, style}
+import de.innfactory.components.RightButton.styles.{color, marginRight, style}
 import sri.core.{ReactComponent, ReactElement}
 import sri.mobile.ReactNative
 import sri.mobile.all.{isIOSPlatform, makeElementNoProps}

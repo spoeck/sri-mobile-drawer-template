@@ -1,11 +1,11 @@
-package de.inncart.components
+package de.innfactory.components
 
 import sri.core.ElementFactory.makeElement
 import sri.core.ReactElement
 import sri.mobile.ReactNative
-import de.inncart.components.HelloSriMobile.styles._
-import de.inncart.components.wrapper.DrawerWrapper
-import de.inncart.router.AppRouter.Second
+import de.innfactory.components.HelloSriMobile.styles._
+import de.innfactory.components.wrapper.DrawerWrapper
+import de.innfactory.router.AppRouter.Second
 import sri.universal.components._
 import sri.universal.router
 import sri.universal.router.UniversalRouterComponent

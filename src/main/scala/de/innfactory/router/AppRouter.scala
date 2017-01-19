@@ -1,8 +1,8 @@
-package de.inncart.router
+package de.innfactory.router
 
-import de.inncart.components.wrapper.DrawerWrapper
+import de.innfactory.components.wrapper.DrawerWrapper
 import sri.core.ReactElement
-import de.inncart.components.{HelloSriMobile, NavDrawer, RightButton, SomePage, SideMenu}
+import de.innfactory.components.{HelloSriMobile, NavDrawer, RightButton, SomePage, SideMenu}
 import sri.universal.components.{DefaultNavigationBar, View}
 import sri.universal.router._
 import sri.universal.styles.UniversalStyleSheet
