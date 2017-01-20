@@ -22,6 +22,7 @@ object SomePage {
         Text(style = styles.text)("This is another Page!")
       )
     }
+
   }
 
 

@@ -1,13 +1,13 @@
 package de.innfactory.components
 
-import de.innfactory.components.NavDrawer.styles.{backgroundColor, flexOne, style}
-import de.innfactory.components.RightButton.styles.{color, marginRight, style}
+import de.innfactory.router.AppRouter
+import de.innfactory.router.AppRouter.{PAGE_FooPage, PAGE_HelloSriMobile, PAGE_SomePage}
 import sri.core.{ReactComponent, ReactElement}
 import sri.mobile.ReactNative
 import sri.mobile.all.{isIOSPlatform, makeElementNoProps}
-import sri.universal.components.{Text, TouchableOpacity, View}
+import sri.universal.components.{ScrollView, Text, TouchableOpacity, View}
 import sri.universal.router
-import sri.universal.router.UniversalRouterComponent
+import sri.universal.router.{UniversalRouterComponent, UniversalRouterCtrl}
 import sri.universal.styles.UniversalStyleSheet
 
 import scala.scalajs.js
@@ -18,21 +18,40 @@ import scala.scalajs.js.annotation.ScalaJSDefined
   */
 object SideMenu {
 
+
+  def setCtrl(): Unit = {}
+
+
   @ScalaJSDefined
-  class Component extends ReactComponent[Unit, Unit] {
+  class Component extends UniversalRouterComponent[Unit, Unit] {
+
+
+
     def render() = {
       View(style = styles.container)(
-        Text()(s"Here is the side menu!!")
+        ScrollView(style = styles.scrollView)(
+          SideMenuComponent.apply(text="Home Page", onPress = () => replace(PAGE_HelloSriMobile), PAGE_HelloSriMobile == AppRouter.currentPage)(),
+          SideMenuComponent.apply(text="Some Page", onPress = () => replace(PAGE_SomePage), PAGE_SomePage == AppRouter.currentPage)(),
+          SideMenuComponent.apply(text="Foo Page", onPress = () => replace(PAGE_FooPage), PAGE_FooPage == AppRouter.currentPage)()
+        )
       )
     }
+
   }
+
 
   object styles extends UniversalStyleSheet {
 
-    val container = style(flexOne,
-      backgroundColor := "rgb(162, 3, 112)",
-      justifyContent.center,
-      alignItems.center)
+    val container = style(
+      flex := 1,
+      flexDirection := flexDirection.column.value,
+      paddingTop := 64,
+      backgroundColor := "#473d4c"
+      )
+
+    val scrollView = style(
+      flex := 1
+    )
   }
 
   js.constructorOf[Component].contextTypes = router.routerContextTypes
